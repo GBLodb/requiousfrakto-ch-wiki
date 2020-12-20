@@ -6,7 +6,7 @@ Requious Frakto, 一个提供高级自定义单方块机器的 mod, 目前非常
 
 所有的电源单位都是 FE, 所有的流体单位都是 mb, 所有的时间单位都是 Tick, 切记.
 
-**我把 Method 翻译成方法了.**
+**我把 Method 翻译成方法, Handler 翻译成握手了.**
 
 Requious Frakto GitHub Wiki : [https://github.com/DaedalusGame/RequiousFrakto/wiki](https://github.com/DaedalusGame/RequiousFrakto/wiki)
 
