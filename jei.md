@@ -28,7 +28,7 @@ description: 'https://github.com/DaedalusGame/RequiousFrakto/wiki/%5BDetails%5D-
 * group - 此槽位所属的需求/结果组.
 * visual - 此槽位的额外视觉效果.
 
-见 [\[细节\] 物品槽.](xi-jie-cao-wei/xi-jie-wu-pin-cao.md)
+见 [\[细节\] 物品槽.](slots/item-slot.md)
 
 ## 流体槽
 
@@ -37,7 +37,7 @@ description: 'https://github.com/DaedalusGame/RequiousFrakto/wiki/%5BDetails%5D-
 * x,y - 槽位在 JEI 中的位置.
 * group - 此槽位所属的需求/结果组.
 
-见 [\[细节\] 流体槽](xi-jie-cao-wei/xi-jie-liu-ti-cao.md).
+见 [\[细节\] 流体槽](slots/fluid-slot.md).
 
 ## 能量槽
 
@@ -47,7 +47,7 @@ description: 'https://github.com/DaedalusGame/RequiousFrakto/wiki/%5BDetails%5D-
 * group - 此槽位所属的需求/结果组.
 * unit - 此单元将显示为此槽位的 Tooltip, 默认为 "none".
 
-见 [\[细节\] 能量槽](xi-jie-cao-wei/xi-jie-neng-liang-cao.md).
+见 [\[细节\] 能量槽](slots/energy-slot.md).
 
 ## 激光槽
 
@@ -56,7 +56,7 @@ description: 'https://github.com/DaedalusGame/RequiousFrakto/wiki/%5BDetails%5D-
 * x,y - 槽位在 JEI 中的位置.
 * group - 此槽位所属的需求/结果组.
 
-见 [\[细节\] 激光槽](xi-jie-cao-wei/xi-jie-ji-guang-cao.md).
+见 [\[细节\] 激光槽](slots/laser-slot.md).
 
 ## 选择槽
 
@@ -66,7 +66,7 @@ description: 'https://github.com/DaedalusGame/RequiousFrakto/wiki/%5BDetails%5D-
 * group - 此槽位所属的需求/结果组.
 * visual - An optional visual to render on this slot.
 
-见 [\[细节\] 选择槽](xi-jie-cao-wei/xi-jie-xuan-ze-cao.md).
+见 [\[细节\] 选择槽](slots/selection-slot.md).
 
 ## 持续时间槽
 
@@ -76,7 +76,7 @@ description: 'https://github.com/DaedalusGame/RequiousFrakto/wiki/%5BDetails%5D-
 * group - 此槽位所属的需求/结果组.
 * visual - 此槽位的额外视觉效果.
 
-见 [\[细节\] 持续时间槽](xi-jie-cao-wei/xi-jie-chi-xu-shi-jian-cao.md).
+见 [\[细节\] 持续时间槽](slots/duration-slot.md).
 
 ## 装饰
 

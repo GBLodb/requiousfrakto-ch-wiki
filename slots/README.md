@@ -6,12 +6,12 @@ description: 'https://github.com/DaedalusGame/RequiousFrakto/wiki/%5BDetails%5D-
 
 ## 槽位种类
 
-* [物品槽](xi-jie-wu-pin-cao.md)
-* [流体槽](xi-jie-liu-ti-cao.md)
-* [能量槽](xi-jie-neng-liang-cao.md)
-* [激光槽](xi-jie-ji-guang-cao.md)
-* [选择槽](xi-jie-xuan-ze-cao.md)
-* [持续时间槽](xi-jie-chi-xu-shi-jian-cao.md)
+* [物品槽](item-slot.md)
+* [流体槽](fluid-slot.md)
+* [能量槽](energy-slot.md)
+* [激光槽](laser-slot.md)
+* [选择槽](selection-slot.md)
+* [持续时间槽](duration-slot.md)
 
 ## 所有种类的槽位都可用的方法
 

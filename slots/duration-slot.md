@@ -19,5 +19,5 @@ DurationSlot Assembly::setDurationSlot(int x, int y)
 DurationSlot::setVisual(SlotVisual slotVisual)
 ```
 
-* slotVisual -详见[槽位效果](xi-jie-cao-wei-xian-shi.md)页面.
+* slotVisual -详见[槽位效果](slot-visual.md)页面.
 

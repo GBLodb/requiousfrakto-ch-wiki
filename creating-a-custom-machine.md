@@ -56,7 +56,7 @@ x = item_gate.setItemSlot(3,1,ComponentFace.front(),40).setAccess(false,true).se
 
 换句话说,  `group` 是用于机器内部交互，`face` 是用于机器外部交互.
 
-另见: [槽位](xi-jie-cao-wei/).
+另见: [槽位](slots/).
 
 ## 第三步 : 配方
 
@@ -76,7 +76,7 @@ item_gate.addRecipe(transferItem);
 
 此配方将会从 `input` 组的任意一个槽位输入任意十个物品, 在输出到 `output` 组中任意一个有效槽位. 从例子中可以看出, 配方是支持标记的. 如有需要, `transferItem` 配方也可以直接被其他机器重新调用.
 
-另见 : [配方](xi-jie-pei-fang.md).
+另见 : [配方](recipes.md).
 
 ## 第四步 : JEI
 
