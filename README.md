@@ -12,3 +12,5 @@ Requious Frakto GitHub Wiki : [https://github.com/DaedalusGame/RequiousFrakto/wi
 
 Requious Frakto on CurseForge : [https://www.curseforge.com/minecraft/mc-mods/requious-frakto](https://www.curseforge.com/minecraft/mc-mods/requious-frakto)
 
+BordDev Discord : [https://discordapp.com/invite/J4bn3FG](https://discordapp.com/invite/J4bn3FG)
+
