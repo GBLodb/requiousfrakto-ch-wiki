@@ -158,3 +158,5 @@ var transferItemJEI = AssemblyRecipe.create(function(container) {
 
 machine.addJEIRecipe(transferItemJEI);
 ```
+
+当配方不包含任何复杂 SlotVisual, MachineVisual 或针对 IWorld 的调用时, 大可不必额外定义 JEI 所用的配方, 为 ``addJEIRecipe`` 传入与在 ``addRecipe`` 中调用的统一配方即可.
