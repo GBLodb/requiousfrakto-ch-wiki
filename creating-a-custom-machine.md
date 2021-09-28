@@ -111,6 +111,18 @@ var transferItem = AssemblyRecipe.create(function(container) {
 machine.addRecipe(transferItem);
 ```
 
+一个更简单的, 更利于理解的例子:
+```csharp
+import mods.requious.AssemblyRecipe;
+var dirtToGravel =
+AssemblyRecipe.create(function (container) {
+
+container.addItemOutput("output", <minecraft:gravel>);
+}).requireItem("input", <minecraft:dirt>);
+
+machine.addRecipe(dirtToGravel);
+```
+
 配方由一个配方函数和任何数量的需求组成. 尽管可以在配方函数中执行任何计算. 但最简单的方法是只向容器中添加输出. 配方必须使用 `addRecipe` 方法被添加到机器中.
 
 此配方将会从 `input` 组的任意一个槽位输入任意十个物品, 在输出到 `output` 组中任意一个有效槽位. 从例子中可以看出, 配方是支持标记的. 如有需要, `transferItem` 配方也可以直接被其他机器重新调用.
