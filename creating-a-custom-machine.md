@@ -63,7 +63,7 @@ machine.setItemSlot(3, 1, ComponentFace.front(), 40)
        .setGroup("output");
 ```
 
-运行此脚本将会为 `item_gate` 机器添加两个槽位.
+运行此脚本将会为 `item_gate` 机器添加两个槽位:
 
 * 在 `1,1` 的槽位可从机器的 `back` 面交互, 有 `40` 物品的容量,  仅允许 `输入` , 且处于 `input` 组中
 * 在 `3,1` 的槽位可从机器的 `front` 面交互, 有 `40` 物品的容量, 仅允许输出, 且处于 `output` 组中. 
@@ -77,22 +77,22 @@ machine.setItemSlot(3, 1, ComponentFace.front(), 40)
 所有可用的 ```ComponentFace``` 参数如下 : 
 
 ```text
-ComponentFace.All()
-ComponentFace.Front()
-ComponentFace.Back()
-ComponentFace.Side()
-ComponentFace.FrontBack()
-ComponentFace.FrontSide()
-ComponentFace.BackSide()
-ComponentFace.None()
-ComponentFace.Up()
-ComponentFace.Down()
-ComponentFace.North()
-ComponentFace.South()
-ComponentFace.East()
-ComponentFace.West()
-ComponentFace.Horizontal()
-ComponentFace.Vertical()
+ComponentFace.all()
+ComponentFace.front()
+ComponentFace.back()
+ComponentFace.side()
+ComponentFace.frontBack()
+ComponentFace.frontSide()
+ComponentFace.backSide()
+ComponentFace.none()
+ComponentFace.up()
+ComponentFace.down()
+ComponentFace.north()
+ComponentFace.south()
+ComponentFace.east()
+ComponentFace.west()
+ComponentFace.horizontal()
+ComponentFace.vertical()
 ```
 
 ## 第三步 : 配方
