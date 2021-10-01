@@ -1,6 +1,8 @@
-# \[细节\] 世界需求
+---
+description: 世界需求可以使你根据世界内的不同来决定机器工不工作 (返回 true 代表可以工作, false 代表不可以工作)
+---
 
- > 世界需求可以使你根据世界内的不同来决定机器工不工作 (返回 true 代表可以工作, false 代表不可以工作)
+# \[细节\] 世界需求
 
 ## 调用
 
@@ -16,7 +18,7 @@ AssemblyRecipeObj.requireWorldCondition("group", function(machine) {
 
 此为 [MachineContainer](machine-container.md)
 
-## 例子
+* 例子
 
 ```csharp
 import crafttweaker.world.IFacing;
@@ -34,6 +36,6 @@ var recipe = AssemblyRecipe.create(function(container) {
     return false;
 }, 1);
 
-// 然后把这个配方添加到机器里
+// 然后把这个配方添加到机器里 (addRecipe)
 
 ```

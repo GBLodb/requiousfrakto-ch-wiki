@@ -1,6 +1,8 @@
-# \[细节\] 世界输出
+---
+description: 世界输出可以使你的输出不再是机器内的物品, 流体之类的输出, 它可以使你跟世界交互
+---
 
- > 世界输出可以使你的输出不再是机器内的物品, 流体之类的输出, 它可以使你跟世界交互
+# \[细节\] 世界输出
 
 ## 调用
 
@@ -20,7 +22,7 @@ AssemblyRecipe.create(function(container) {
 
 此为 [MachineContainer](machine-container.md)
 
-## 例子
+* 例子
 
 ```csharp
 import crafttweaker.world.IFacing;
@@ -40,6 +42,6 @@ var recipe = AssemblyRecipe.create(function(container) {
     }
 });
 
-// 然后把这个配方添加到机器里
+// 然后把这个配方添加到机器里 (addRecipe)
 
 ```
