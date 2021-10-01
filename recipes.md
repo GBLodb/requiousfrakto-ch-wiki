@@ -70,6 +70,14 @@ Marking Laser requirements will give you all power currently flowing into the ma
 
 标记激光需求会提供当前流入机器的所有功率, 而不仅仅是所需的实际功率.
 
+### 世界需求
+
+`AssemblyRecipe::requireWorldCondition(String group, function(machine) {return true}, int interval)`
+
+* group - 组名 (随便填, 但不要重复)
+* function(machine) {{return true} - 请看[世界需求](advanced/world-require.md)
+* interval - 多久触发一次
+
 ### 选择
 
 `AssemblyRecipe::requireSelection(String group, IItemStack stack, boolean reset)`
@@ -156,6 +164,14 @@ You can use these functions to retrieve previously marked ingredients. For examp
 * visual - 激光在世界中渲染时的效果.
 * {可选} slotVisual - 在 JEI 中显示的槽位效果.
 
+### 世界输出
+
+#### 带有世界输出的配方不能直接添加到 JEI 里
+
+`RecipeContainer::addWorldOutput(function(machine) {return true})`
+
+* function(machine) {return true} - 请看[世界输出](advanced/world-output.md)
+
 ## 将配方添加到机器中
 
 `Assembly::addRecipe(AssemblyRecipe recipe)`
@@ -167,4 +183,3 @@ You can use these functions to retrieve previously marked ingredients. For examp
 This will add the recipe to the machine's JEI handler. You can only add a recipe to one machine's JEI handler!
 
 将配方添加到机器的 JEI 处理器. 一台机器的 JEI 处理器中只能添加一个配方.
-
