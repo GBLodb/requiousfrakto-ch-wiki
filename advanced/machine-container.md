@@ -10,10 +10,10 @@
 | :----- | :----- | :--- |
 | world | IWorld | 获取机器所在的世界 |
 | pos | IBlockPos | 获取机器的坐标 |
-| block | IBlock | 返回机器方块 (data getter 不为 null) |
+| block | IBlock | 返回机器方块 (``data`` Getter 的返回不为 ``null``) |
 | state | IBlockState | 返回机器方块的方块状态 |
 | facing | IFacing | 返回机器的朝向 |
-| random | [Random](random.md) | 返回一个 Random 对象 |
+| random | [Random](random.md) | 返回一个 ``Random`` 对象 (CrT 已经有 ``IRandom`` 类了, 此 Getter 基本无用) |
 
 ## 可用 ZenMethod
 
