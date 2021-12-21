@@ -1,22 +1,26 @@
 ---
-description: 世界需求可以使你根据世界内的不同来决定机器工不工作 (返回 true 代表可以工作, false 代表不可以工作)
+description: 世界需求可以使你根据世界内的不同以决定机器工作与否
 ---
 
 # \[细节\] 世界需求
 
+## 导包
+
+`import requious.fluid.IWorldFunction;`
+
 ## 调用
 
-需要在 function 里返回一个 bool
+需要在 function 里返回一个 bool (返回 ``true`` 代表可以工作, ``false`` 代表不可以工作)
 
 ```csharp
-AssemblyRecipeObj.requireWorldCondition("group", function(machine) {
+AssemblyRecipeObj.requireWorldCondition("group", function(machineContainer) {
     return true;
 });
 ```
 
-## 上述的 `function(container) {}` 是什么?
+## 上述的函数中 `machineContainer` 是什么?
 
-此为 [MachineContainer](machine-container.md)
+此为 [MachineContainer](machine-container.md) 类的实例
 
 * 例子
 
@@ -26,7 +30,7 @@ import mods.requious.AssemblyRecipe;
 
 var recipe = AssemblyRecipe.create(function(container) {
     container.addItemOutput("output", <minecraft:iron_ingot>);
-}).requireWorldCondition("world_condition", function(machine) {
+}).requireWorldCondition("world_condition", function(machineContainer) {
     var world = machine.world;
 
     if(!world.remote && world.getBlockState(machine.pos.getOffset(IFacing.down(), 1) == <blockstate:minecraft:stone>)) {
