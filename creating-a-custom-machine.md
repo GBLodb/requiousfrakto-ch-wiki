@@ -138,7 +138,7 @@ machine.addRecipe(dirtToGravel);
 ```csharp
 import mods.requious.SlotVisual;
 
-var arrowRight = SlotVisual.create().addPart("requious:textures/gui/assembly_gauges.png", 0, 8);
+var arrowRight = SlotVisual.create(1, 1).addPart("requious:textures/gui/assembly_gauges.png", 0, 8);
 
 machine.setJEIItemSlot(0,0,"input");
 machine.setJEIItemSlot(2,0,"output");
