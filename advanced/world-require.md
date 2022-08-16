@@ -28,16 +28,16 @@ AssemblyRecipeObj.requireWorldCondition("group", function(machineContainer) {
 import crafttweaker.world.IFacing;
 import mods.requious.AssemblyRecipe;
 
-var recipe=AssemblyRecipe.create(function(container){
+var recipe = AssemblyRecipe.create(function(container) {
     container.addItemOutput("output", <minecraft:iron_ingot>);
-}).requireWorldCondition("group", function(machineContainer) {
+}).requireWorldCondition("world_condition", function(machineContainer) {
     var world as IWorld = machineContainer.world;
     var pos as IBlockPos = machineContainer.pos;
     if(!world.remote && world.getBlockState(pos.getOffset(IFacing.down(),1)) == <blockstate:minecraft:stone>){
         return true;
     }
     return false;
-},1);
+}, 1);
 
 // 然后把这个配方添加到机器里 (addRecipe)
 
