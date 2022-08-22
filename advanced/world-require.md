@@ -26,7 +26,6 @@ AssemblyRecipeObj.requireWorldCondition("group", function(machineContainer) {
 
 ```csharp
 import mods.requious.AssemblyRecipe;
-import requious.fluid.IWorldFunction;
 import crafttweaker.world.IFacing;
 import crafttweaker.world.IWorld;
 import crafttweaker.world.IBlockPos;
