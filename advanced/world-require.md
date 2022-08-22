@@ -25,18 +25,19 @@ AssemblyRecipeObj.requireWorldCondition("group", function(machineContainer) {
 * 例子
 
 ```csharp
-import crafttweaker.world.IFacing;
 import mods.requious.AssemblyRecipe;
+import crafttweaker.world.IFacing;
+import crafttweaker.world.IWorld;
+import crafttweaker.world.IBlockPos;
 
 var recipe = AssemblyRecipe.create(function(container) {
     container.addItemOutput("output", <minecraft:iron_ingot>);
 }).requireWorldCondition("world_condition", function(machineContainer) {
-    var world = machine.world;
-
-    if(!world.remote && world.getBlockState(machine.pos.getOffset(IFacing.down(), 1) == <blockstate:minecraft:stone>)) {
+    var world as IWorld = machineContainer.world;
+    var pos as IBlockPos = machineContainer.pos;
+    if(!world.remote && world.getBlockState(pos.getOffset(IFacing.down(), 1)) == <blockstate:minecraft:stone>){
         return true;
     }
-
     return false;
 }, 1);
 
