@@ -25,12 +25,10 @@ AssemblyRecipeObj.requireWorldCondition("group", function(machineContainer) {
 * 例子
 
 ```csharp
-import mods.requious.ComponentFace;
 import mods.requious.AssemblyRecipe;
-import mods.requious.SlotVisual;
+import requious.fluid.IWorldFunction;
 import crafttweaker.world.IFacing;
 import crafttweaker.world.IWorld;
-import requious.fluid.IWorldFunction;
 import crafttweaker.world.IBlockPos;
 
 var recipe = AssemblyRecipe.create(function(container) {
@@ -38,7 +36,7 @@ var recipe = AssemblyRecipe.create(function(container) {
 }).requireWorldCondition("world_condition", function(machineContainer) {
     var world as IWorld = machineContainer.world;
     var pos as IBlockPos = machineContainer.pos;
-    if(!world.remote && world.getBlockState(pos.getOffset(IFacing.down(),1)) == <blockstate:minecraft:stone>){
+    if(!world.remote && world.getBlockState(pos.getOffset(IFacing.down(), 1)) == <blockstate:minecraft:stone>){
         return true;
     }
     return false;
