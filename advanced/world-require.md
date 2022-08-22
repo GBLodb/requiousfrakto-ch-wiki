@@ -25,8 +25,13 @@ AssemblyRecipeObj.requireWorldCondition("group", function(machineContainer) {
 * 例子
 
 ```csharp
-import crafttweaker.world.IFacing;
+import mods.requious.ComponentFace;
 import mods.requious.AssemblyRecipe;
+import mods.requious.SlotVisual;
+import crafttweaker.world.IFacing;
+import crafttweaker.world.IWorld;
+import requious.fluid.IWorldFunction;
+import crafttweaker.world.IBlockPos;
 
 var recipe = AssemblyRecipe.create(function(container) {
     container.addItemOutput("output", <minecraft:iron_ingot>);
