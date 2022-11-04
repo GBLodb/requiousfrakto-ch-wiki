@@ -31,8 +31,6 @@ AssemblyRecipe.create(function(container) {
 ```csharp
 import mods.requious.AssemblyRecipe;
 import crafttweaker.world.IFacing;
-import crafttweaker.world.IWorld;
-import crafttweaker.world.IBlockPos;
 
 var recipe = AssemblyRecipe.create(function(container) {
     if(!container.jei) { // 判断配方是否添加到 JEI, 是则不执行大括号内的代码
