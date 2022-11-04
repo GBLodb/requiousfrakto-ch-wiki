@@ -29,16 +29,16 @@ AssemblyRecipe.create(function(container) {
 * 例子
 
 ```csharp
-import crafttweaker.world.IFacing;
 import mods.requious.AssemblyRecipe;
+import crafttweaker.world.IFacing;
 
 var recipe = AssemblyRecipe.create(function(container) {
     if(!container.jei) { // 判断配方是否添加到 JEI, 是则不执行大括号内的代码
         container.addWorldOutput(function(machineContainer) {
-            var world = machine.world;
+            var world = machineContainer.world;
 
             if(!world.remote) {
-                world.setBlockState(<blockstate:minecraft:iron_block>, machine.pos.getOffset(IFacing.up(), 1));
+                world.setBlockState(<blockstate:minecraft:iron_block>, machineContainer.pos.getOffset(IFacing.up(), 1));
                 return true;
             }
             return false;
